@@ -9,3 +9,17 @@ class Solution {
         return answer;
     }
 }
+
+
+//다른사람 풀이
+// class Solution {
+//     public int solution(int n) {
+//         int answer = 0;
+
+//         for(int i=2; i<=n; i+=2){ //짝수만 더하니까 i 2부터 시작, i에 2씩 더해서 증가
+//             answer+=i;
+//         }
+
+//         return answer;
+//     }
+// }
