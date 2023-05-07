@@ -6,6 +6,6 @@ function solution(n) {
             answer.push(i);
         }
     }
-    
+    //약수의 수는 순서쌍의 수와 같음
     return answer.length;
 }
