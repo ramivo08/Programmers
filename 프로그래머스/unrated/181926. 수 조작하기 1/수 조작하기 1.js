@@ -1,9 +1,20 @@
 function solution(n, control) {
-    const controller = {
-        w:1,
-        s:-1,
-        d:10,
-        a:-10
+   var answer = n
+
+    
+    for(var i=0; i < control.length; i++){
+        if(control[i]===("w")){
+            answer+=1;
+        }
+        else if(control[i]===("s")){
+            answer-=1;
+        }
+        else if(control[i]===("d")){
+            answer+=10;
+        }
+        else if(control[i]===("a")){
+            answer-=10;
+        }
     }
-    return [...control].reduce((acc, cur)=>acc + controller[cur], n);
+    return answer;
 }
