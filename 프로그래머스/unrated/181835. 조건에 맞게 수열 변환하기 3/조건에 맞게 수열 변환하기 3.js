@@ -4,9 +4,9 @@ function solution(arr, k) {
     for(var i=0; i<arr.length; i++){
         if(k % 2 != 0){
            
-           answer.push(arr[i] *= k);
+           answer.push(arr[i] * k);
         }else{
-            answer.push(arr[i] += k);
+            answer.push(arr[i] + k);
         }
            
     }
