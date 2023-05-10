@@ -1,7 +1,13 @@
 function solution(my_string, letter) {
+
+    return my_string.replaceAll(letter,""); //replace로 했을때는 실패..
+    
+    //다른사람 풀이
+    // return my_string.split(letter).join('');
+}
+
+
   //  var answer = '';
-   // console.log(my_string);
-   // console.log(letter);
     
  //   for(var i=0; i<my_string.length; i++){
  //       if(my_string[i]===letter){
@@ -9,7 +15,5 @@ function solution(my_string, letter) {
   //      }
        
  //   }
-    return my_string.replaceAll(letter,"");
-}
-
-
+ //       return answer;
+//}
