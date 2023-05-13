@@ -1,10 +1,10 @@
 function solution(start, end) {
-    var num = start-end+1;
+    
     var answer = [];
     
-    for(var i=0; i<num; i++){
+    for(var i=start; i>=end; i--){
         
-        answer[i]= start-i;
+        answer.push(i);
        // console.log(answer);
     }
     
