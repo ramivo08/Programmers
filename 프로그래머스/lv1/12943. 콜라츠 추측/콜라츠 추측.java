@@ -1,5 +1,6 @@
 class Solution {
     public int solution(long num) {
+        //오버플로우로 int타입에서 long으로 변경
         int answer = 0;
         
         while(num != 1){
