@@ -19,3 +19,9 @@ function solution(phone_number) {
 //    var result = "*".repeat(s.length - 4) + s.slice(-4);
 //return result;
  // }
+
+
+//정규식을 이용
+//function hide_numbers(s){
+//  return s.replace(/\d(?=\d{4})/g, "*");
+//}
