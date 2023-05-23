@@ -9,3 +9,16 @@ class Solution {
         return 45 - answer;
     }
 }
+
+
+
+//다른사람 풀이
+//class Solution {
+//    public int solution(int[] numbers) {
+//       int sum = 45;
+//       for (int i : numbers) {
+//           sum -= i;
+//        }
+//        return sum;
+//    }
+//}
