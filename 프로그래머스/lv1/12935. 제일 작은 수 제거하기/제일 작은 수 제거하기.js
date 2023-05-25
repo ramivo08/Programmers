@@ -1,6 +1,6 @@
 function solution(arr) {
     
-    if(arr.length ==1)
+    if(arr.length ==1) //배열의 길이가 하나일때 -1 리턴
         return [-1];
     
     var i=0;
