@@ -12,7 +12,8 @@ function solution(price) {
            return Math.floor(price - (price * 0.05))
             //(price*0.95)
         }else{
-            return price
+            return Math.floor(price)
+            //return price => ok
         }
     return answer;
 }
