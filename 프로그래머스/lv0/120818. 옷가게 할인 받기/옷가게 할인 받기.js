@@ -17,3 +17,21 @@ function solution(price) {
         }
     return answer;
 }
+
+
+
+//Math.floor를 사용하지 않고 해보기
+//function solution(price) {
+//    var answer = 0;
+    
+//        if(price >= 500000){
+//           return price*0.8
+//        }else if(price >= 300000){
+//            return price * 0.1
+//        }else if(price >= 100000){
+//           return price * 0.95
+//        }else{
+ //           return price
+ //       }
+ //   return answer;
+//}
