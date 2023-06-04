@@ -11,3 +11,16 @@ function solution(my_string) {
     return answer;
     
 }
+
+
+//다른사람 풀이
+// isNaN 사용
+
+//function solution(my_string) {
+//    const arr = my_string.split('');
+//    let sum = 0;
+//    for (let i = 0; i < arr.length; i++) {
+//        if (!isNaN(arr[i])) sum += Number(arr[i]);
+//    }
+//    return sum;
+//}
