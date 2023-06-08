@@ -6,9 +6,10 @@ class Solution {
         
         String[] str = my_string.split("");
         System.out.println(Arrays.toString(str));
+        //System.out.println(str.toString); 했더니 주소값?이 나왔었다.
 
-        for (int j : index_list) {
-            answer += str[j];
+        for(int i=0; i<index_list.length; i++){
+            answer += str[index_list[i]];
         }
         return answer;
     	}
