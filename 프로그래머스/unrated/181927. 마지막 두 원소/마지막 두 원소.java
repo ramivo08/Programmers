@@ -18,3 +18,27 @@ class Solution {
         return answer;
     }
 }
+
+
+//다른사람 풀이
+//class Solution {
+//    public int[] solution(int[] num_list) {
+//        int[] answer = new int[num_list.length+1];
+//배열 생성 num_list 배열의 마지막 원소 값을 조건에 맞게 계산한 값을 원소에 추가 해야하므로 길이에+1하여 자리를 만들어준다.
+        
+//        int last =0; //마지막이 될 원소
+        
+//        if(num_list[num_list.length-1] > num_list[num_list.length-2]){
+//            last = num_list[num_list.length-1] - num_list[num_list.length-2];
+//        }else{
+//            last = num_list[num_list.length-1] * 2 ;
+//        }
+        
+//        for(int i=0; i<num_list.length; i++){
+//            answer[i] = num_list[i];
+//        }
+//        answer[answer.length -1] = last; //answer의 마지막원소 자리에는 if문에서 구한 last변수로 할당한다
+        
+//        return answer;
+//    }
+//}
