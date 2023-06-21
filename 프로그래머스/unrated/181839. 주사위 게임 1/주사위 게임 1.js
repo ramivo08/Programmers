@@ -7,6 +7,7 @@ function solution(a, b) {
         answer = 2*(a+b)
     }else{
         answer = Math.abs(a-b)
+        //a-b만 했을때, 실패했는데 Math.abs()메서드를 사용해서 절대값으로 풀이
     }
     return answer;
 }
