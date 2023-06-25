@@ -10,7 +10,7 @@ class Solution {
         int idx=0; //answer배열에 할당할때 index를 지정할 값.
         for(int i=0; i<arr.length; i++){ //arr배열의 길이만큼 순회하여 arr의 모든 원소에 접근
             for(int j=0; j<arr[i]; j++){ //arr[i]번째 원소를 answer의 index j만큼 할당한다.
-                answer[idx++] = arr[i]; //j만큼 할당함녀 i값이 증가하게 된다.
+                answer[idx++] = arr[i]; //j만큼 할당하면 i값이 증가하게 된다.
             }
         }
         return answer;
