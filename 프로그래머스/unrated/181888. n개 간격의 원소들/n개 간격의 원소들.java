@@ -16,3 +16,37 @@ class Solution {
         return answer;
     }
 }
+
+//다른사람의 풀이
+class Solution{
+    public int[] solution(int[] num_list, int n){
+        int num = num_list.length % n ==0 ? num_list.length/n : num_list.length / n +1;
+        // int[] answer = new int[num_list.length / n + (num_list.length % n != 0 ? 1 : 0)]; //생성과 동시에 길이 정하기
+        int idx =0;
+        int[] answer = new int[num];
+
+        for(int i=0; i<num_list.length; i+=n){
+            answer[idx] = num_list[i];
+        }
+        return answer;
+    }
+}
+
+//다른 사람 풀이 - ArrayList를 사용한 방법
+import java.util.ArrayList;
+
+class Solution {
+    public int[] solution(int[] num_list, int n) {
+
+        ArrayList<Integer> list = new ArrayList();
+        for (int i = 0; i < num_list.length;) {
+            list.add(num_list[i]);
+            i+=n;
+        }
+        int[] answer = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i);
+        }
+        return answer;
+    }
+}
