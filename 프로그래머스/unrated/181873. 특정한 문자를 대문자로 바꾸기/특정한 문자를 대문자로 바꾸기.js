@@ -11,3 +11,9 @@ function solution(my_string, alp) {
     }
     return answer;
 }
+
+//replaceAll 사용
+function solution(my_string, alp) {
+    return my_string.replaceAll(alp, alp.toUpperCase());
+}
+
