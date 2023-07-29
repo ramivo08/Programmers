@@ -1,10 +1,10 @@
 # [unrated] 배열 비교하기 - 181856 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181856?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181856?language=javascript) 
 
 ### 성능 요약
 
-메모리: 76.3 MB, 시간: 0.02 ms
+메모리: 33.6 MB, 시간: 2.35 ms
 
 ### 구분
 
