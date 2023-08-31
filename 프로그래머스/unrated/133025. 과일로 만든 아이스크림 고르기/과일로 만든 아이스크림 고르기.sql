@@ -11,10 +11,17 @@
 
 
 -- 서브쿼리 사용
-SELECT A.FLAVOR
-FROM FIRST_HALF A , ICECREAM_INFO B 
-WHERE A.FLAVOR = B.FLAVOR
-AND B.INGREDIENT_TYPE like '%fruit_based%'
-AND A.TOTAL_ORDER > 3000
-ORDER BY A.TOTAL_ORDER DESC
+-- SELECT A.FLAVOR
+-- FROM FIRST_HALF A , ICECREAM_INFO B 
+-- WHERE A.FLAVOR = B.FLAVOR
+-- AND B.INGREDIENT_TYPE like '%fruit_based%'
+-- AND A.TOTAL_ORDER > 3000
+-- ORDER BY A.TOTAL_ORDER DESC
 
+
+-- 서브쿼리 사용
+select flavor
+from first_half
+where total_order > 3000
+and flavor in(select flavor from icecream_info where ingredient_type ='fruit_based')
+order by total_order desc;
